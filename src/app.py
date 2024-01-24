@@ -19,7 +19,6 @@ with st.form("images_form"):
 if submit_button:
     st.write("Generando imagenes...")
     response = openai.Image.create(
-        model = "dalle-3",
         prompt = text,
         n = num_images,
         size = image_size
